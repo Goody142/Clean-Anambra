@@ -12,6 +12,7 @@ import PickupDashboardPage from "./pages/PickupDashboardPage";
 import GovernmentDashboardPage from "./pages/GovernmentDashboardPage";
 import NotificationsPage from "./pages/NotificationsPage";
 import MapViewPage from "./pages/MapViewPage";
+import LeaderboardPage from "./pages/LeaderboardPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,6 +33,7 @@ const App = () => (
               <Route path="/dashboard" element={<GovernmentDashboardPage />} />
               <Route path="/notifications" element={<NotificationsPage />} />
               <Route path="/map" element={<MapViewPage />} />
+              <Route path="/leaderboard" element={<LeaderboardPage />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
             <BottomNav />

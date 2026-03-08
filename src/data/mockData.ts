@@ -1,7 +1,7 @@
 import { User, WasteReport, PickupTask, Notification } from './types';
 
 export const initialUsers: User[] = [
-  { id: 'u1', name: 'Chioma Okafor', role: 'resident', phone: '08012345678', area: 'Upper Iweka, Onitsha' },
+  { id: 'u1', name: 'Chidinma Obianigwe', role: 'resident', phone: '08012345678', area: 'Upper Iweka, Onitsha' },
   { id: 'u2', name: 'Emeka Nwankwo', role: 'resident', phone: '08023456789', area: 'Fegge, Onitsha' },
   { id: 'u3', name: 'Adaeze Eze', role: 'resident', phone: '08034567890', area: 'Awka Road, Onitsha' },
   { id: 'u4', name: 'Team Alpha Sanitation', role: 'pickup_team', phone: '08045678901', area: 'Onitsha Central' },
