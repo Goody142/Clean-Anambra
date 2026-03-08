@@ -6,41 +6,41 @@
 
 @layer base {
   :root {
-    --background: 0 0% 98%;
-    --foreground: 160 10% 12%;
+    --background: 140 20% 97%;
+    --foreground: 160 25% 10%;
 
     --card: 0 0% 100%;
-    --card-foreground: 160 10% 12%;
+    --card-foreground: 160 25% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 160 10% 12%;
+    --popover-foreground: 160 25% 10%;
 
-    --primary: 152 55% 33%;
+    --primary: 152 60% 30%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 150 20% 94%;
-    --secondary-foreground: 152 55% 25%;
+    --secondary: 150 25% 93%;
+    --secondary-foreground: 152 60% 22%;
 
-    --muted: 150 10% 95%;
-    --muted-foreground: 160 5% 45%;
+    --muted: 150 15% 94%;
+    --muted-foreground: 160 8% 45%;
 
-    --accent: 152 40% 90%;
-    --accent-foreground: 152 55% 25%;
+    --accent: 152 45% 88%;
+    --accent-foreground: 152 60% 22%;
 
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 150 10% 90%;
-    --input: 150 10% 88%;
-    --ring: 152 55% 33%;
+    --border: 150 15% 90%;
+    --input: 150 15% 86%;
+    --ring: 152 60% 30%;
 
     --radius: 0.75rem;
 
-    --warning: 38 92% 50%;
-    --warning-foreground: 0 0% 100%;
-    --info: 210 80% 52%;
+    --warning: 38 95% 50%;
+    --warning-foreground: 38 95% 10%;
+    --info: 210 85% 52%;
     --info-foreground: 0 0% 100%;
-    --success: 152 55% 40%;
+    --success: 152 60% 38%;
     --success-foreground: 0 0% 100%;
     --emergency: 0 84% 50%;
     --emergency-foreground: 0 0% 100%;
@@ -61,22 +61,22 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground font-sans;
+    @apply bg-background text-foreground font-sans antialiased;
     font-family: 'Plus Jakarta Sans', sans-serif;
   }
 }
 
 @layer utilities {
   .status-pending {
-    @apply bg-warning/15 text-warning;
+    @apply bg-warning/15 text-warning font-semibold;
   }
   .status-in-progress {
-    @apply bg-info/15 text-info;
+    @apply bg-info/15 text-info font-semibold;
   }
   .status-completed {
-    @apply bg-success/15 text-success;
+    @apply bg-success/15 text-success font-semibold;
   }
   .status-emergency {
-    @apply bg-emergency/15 text-emergency font-semibold;
+    @apply bg-emergency/15 text-emergency font-bold;
   }
 }
