@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/Clean Anambra
+**URL**: https://lovable.dev/projects/cleananambra-3mtt
 
 ## How can I edit this code?
 
