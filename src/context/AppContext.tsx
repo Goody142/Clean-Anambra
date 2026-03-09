@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useState, useCallback } from 'react';
 import { User, WasteReport, PickupTask, Notification, ReportCategory, ReportPriority, ReportStatus, UserRole } from '@/data/types';
 import { initialUsers, initialReports, initialTasks, initialNotifications } from '@/data/mockData';
-
+import { triggerEmergencyAlert, triggerNotificationAlert, triggerSuccessAlert } from '@/lib/notifications';
 interface AppState {
   currentUser: User;
   users: User[];
