@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useState, useCallback } from 'react';
 import { User, WasteReport, PickupTask, Notification, ReportCategory, ReportPriority, ReportStatus, UserRole } from '@/data/types';
 import { initialUsers, initialReports, initialTasks, initialNotifications } from '@/data/mockData';
-
+import { triggerEmergencyAlert, triggerNotificationAlert, triggerSuccessAlert } from '@/lib/notifications';
 interface AppState {
   currentUser: User;
   users: User[];
@@ -61,6 +61,13 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         createdAt: now,
         reportId: newReport.id,
       }, ...prev]);
+
+      // Trigger sound and vibration for emergency alerts
+      if (isEmergency) {
+        triggerEmergencyAlert();
+      } else {
+        triggerNotificationAlert();
+      }
     }
   }, [users]);
 
@@ -90,6 +97,8 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         createdAt: now,
         reportId,
       }, ...prev]);
+      // Notify reporter with sound
+      triggerNotificationAlert();
     }
   }, [currentUser, reports]);
 
@@ -117,6 +126,8 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
             createdAt: now,
             reportId: task.reportId,
           }, ...prev]);
+          // Play success sound for completed tasks
+          triggerSuccessAlert();
         }
       }
     }
