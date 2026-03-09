@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AppProvider } from "@/context/AppContext";
 import { BottomNav } from "@/components/BottomNav";
+import LandingPage from "./pages/LandingPage";
 import HomePage from "./pages/HomePage";
 import ReportPage from "./pages/ReportPage";
 import ReportsFeedPage from "./pages/ReportsFeedPage";
