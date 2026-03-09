@@ -4,7 +4,7 @@ import { useApp } from '@/context/AppContext';
 import { motion } from 'framer-motion';
 
 const navItems = [
-  { path: '/', icon: Home, label: 'Home' },
+  { path: '/home', icon: Home, label: 'Home' },
   { path: '/reports', icon: FileText, label: 'Reports' },
   { path: '/pickup', icon: Truck, label: 'Pickup' },
   { path: '/dashboard', icon: BarChart3, label: 'Monitor' },
@@ -15,6 +15,9 @@ export const BottomNav = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const { unreadCount } = useApp();
+
+  // Hide on landing page
+  if (location.pathname === '/') return null;
 
   return (
     <nav className="fixed bottom-0 left-0 right-0 z-50 bg-card/80 backdrop-blur-xl border-t border-border">

@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AppProvider } from "@/context/AppContext";
 import { BottomNav } from "@/components/BottomNav";
+import LandingPage from "./pages/LandingPage";
 import HomePage from "./pages/HomePage";
 import ReportPage from "./pages/ReportPage";
 import ReportsFeedPage from "./pages/ReportsFeedPage";
@@ -27,7 +28,8 @@ const App = () => (
         <BrowserRouter>
           <div className="max-w-lg mx-auto min-h-screen bg-background relative">
             <Routes>
-              <Route path="/" element={<HomePage />} />
+              <Route path="/" element={<LandingPage />} />
+              <Route path="/home" element={<HomePage />} />
               <Route path="/report" element={<ReportPage />} />
               <Route path="/reports" element={<ReportsFeedPage />} />
               <Route path="/pickup" element={<PickupDashboardPage />} />
