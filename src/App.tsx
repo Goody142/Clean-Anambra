@@ -13,6 +13,7 @@ import GovernmentDashboardPage from "./pages/GovernmentDashboardPage";
 import NotificationsPage from "./pages/NotificationsPage";
 import MapViewPage from "./pages/MapViewPage";
 import LeaderboardPage from "./pages/LeaderboardPage";
+import AreaAnalyticsPage from "./pages/AreaAnalyticsPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -34,6 +35,7 @@ const App = () => (
               <Route path="/notifications" element={<NotificationsPage />} />
               <Route path="/map" element={<MapViewPage />} />
               <Route path="/leaderboard" element={<LeaderboardPage />} />
+              <Route path="/area-analytics" element={<AreaAnalyticsPage />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
             <BottomNav />
