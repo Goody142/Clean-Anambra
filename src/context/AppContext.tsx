@@ -124,6 +124,8 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
             createdAt: now,
             reportId: task.reportId,
           }, ...prev]);
+          // Play success sound for completed tasks
+          triggerSuccessAlert();
         }
       }
     }
