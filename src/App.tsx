@@ -35,6 +35,7 @@ const App = () => (
               <Route path="/notifications" element={<NotificationsPage />} />
               <Route path="/map" element={<MapViewPage />} />
               <Route path="/leaderboard" element={<LeaderboardPage />} />
+              <Route path="/area-analytics" element={<AreaAnalyticsPage />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
             <BottomNav />
