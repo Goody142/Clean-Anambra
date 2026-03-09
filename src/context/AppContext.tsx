@@ -97,6 +97,8 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         createdAt: now,
         reportId,
       }, ...prev]);
+      // Notify reporter with sound
+      triggerNotificationAlert();
     }
   }, [currentUser, reports]);
 
