@@ -61,6 +61,13 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         createdAt: now,
         reportId: newReport.id,
       }, ...prev]);
+
+      // Trigger sound and vibration for emergency alerts
+      if (isEmergency) {
+        triggerEmergencyAlert();
+      } else {
+        triggerNotificationAlert();
+      }
     }
   }, [users]);
 
