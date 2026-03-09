@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/cleananambra-3mtt
+**URL**: https://lovable.dev/projects/9edf752c-3e18-4d76-a70b-6c3c26cee04c
 
 ## How can I edit this code?
 
