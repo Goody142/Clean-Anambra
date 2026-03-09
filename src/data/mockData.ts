@@ -42,6 +42,38 @@ export const initialReports: WasteReport[] = [
     location: { address: 'Niger Bridge Approach, Onitsha', lat: 6.1650, lng: 6.7740, area: 'Bridge Head' },
     status: 'pending', priority: 'high', createdAt: '2026-03-07T22:00:00Z', updatedAt: '2026-03-07T22:00:00Z',
   },
+  {
+    id: 'r6', reporterId: 'u1', category: 'garbage_heap',
+    description: 'Market waste piling up near the bus stop. Rats seen at night.',
+    location: { address: 'Main Market Bus Stop, Onitsha', lat: 6.1410, lng: 6.7830, area: 'Main Market' },
+    status: 'pending', priority: 'high', createdAt: '2026-03-08T10:00:00Z', updatedAt: '2026-03-08T10:00:00Z',
+  },
+  {
+    id: 'r7', reporterId: 'u3', category: 'blocked_drainage',
+    description: 'Storm drain blocked causing flooding during rain.',
+    location: { address: 'Ochanja Road, Onitsha', lat: 6.1380, lng: 6.7890, area: 'Ochanja' },
+    status: 'completed', priority: 'normal', createdAt: '2026-03-04T07:00:00Z', updatedAt: '2026-03-06T15:00:00Z',
+    assignedTeamId: 'u4',
+  },
+  {
+    id: 'r8', reporterId: 'u2', category: 'environmental_hazard',
+    description: 'Chemical smell from illegal factory waste dumped in open lot.',
+    location: { address: 'Industrial Layout, Nnewi', lat: 6.0200, lng: 6.9100, area: 'Nnewi' },
+    status: 'pending', priority: 'high', createdAt: '2026-03-08T14:30:00Z', updatedAt: '2026-03-08T14:30:00Z',
+  },
+  {
+    id: 'r9', reporterId: 'u1', category: 'garbage_heap',
+    description: 'Refuse dump blocking pedestrian walkway near school.',
+    location: { address: 'Zik Avenue, Awka', lat: 6.2100, lng: 7.0700, area: 'Awka' },
+    status: 'assigned', priority: 'normal', createdAt: '2026-03-07T11:00:00Z', updatedAt: '2026-03-08T09:00:00Z',
+    assignedTeamId: 'u5',
+  },
+  {
+    id: 'r10', reporterId: 'u3', category: 'delayed_pickup',
+    description: 'Scheduled pickup missed for 3 consecutive weeks.',
+    location: { address: '12 Iweka Road, Onitsha', lat: 6.1453, lng: 6.7876, area: 'Upper Iweka' },
+    status: 'pending', priority: 'normal', createdAt: '2026-03-08T08:00:00Z', updatedAt: '2026-03-08T08:00:00Z',
+  },
 ];
 
 export const initialTasks: PickupTask[] = [
