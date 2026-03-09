@@ -4,7 +4,7 @@ import { useApp } from '@/context/AppContext';
 import { motion } from 'framer-motion';
 
 const navItems = [
-  { path: '/', icon: Home, label: 'Home' },
+  { path: '/home', icon: Home, label: 'Home' },
   { path: '/reports', icon: FileText, label: 'Reports' },
   { path: '/pickup', icon: Truck, label: 'Pickup' },
   { path: '/dashboard', icon: BarChart3, label: 'Monitor' },
