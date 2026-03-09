@@ -13,6 +13,7 @@ import GovernmentDashboardPage from "./pages/GovernmentDashboardPage";
 import NotificationsPage from "./pages/NotificationsPage";
 import MapViewPage from "./pages/MapViewPage";
 import LeaderboardPage from "./pages/LeaderboardPage";
+import AreaAnalyticsPage from "./pages/AreaAnalyticsPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
